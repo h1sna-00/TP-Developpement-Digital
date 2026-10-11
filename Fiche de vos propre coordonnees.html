@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fiche d'inscriprtion</title>
+    <style>
+    fieldset {
+      width: 600px;
+      border-radius: 15px;
+    }
+  </style>
+</head>
+<body>
+    
+    <fieldset ><legend><optgroup label="Vos coordonnees"></optgroup></legend>
+    <table>
+        <tr>
+            <td>Nom:</td>
+            <td><input type="text"></td>
+        </tr>
+       <tr>
+       <td>Prenom:</td>
+         <td><input type="texte"></td>
+       </tr>
+       <tr>
+            <td>Date de naissance:</td>
+            <td><input type="date"></td>
+        </tr>
+        <tr>
+            <td>Mail:</td>
+            <td><input type="email"></td>
+        </tr>
+     <tr>
+            <td>Votre site:</td>
+            <td><input type="text"></td>
+        </tr>
+     <tr>
+            <td>Code:</td>
+            <td><input type="password"></td>
+        </tr>
+           <tr>
+          <td>Genre:</td>
+       <td><input type="radio" id="mas" >
+          <label for="radio">Feminin </label><br>
+       <input type="radio" id="mas" >
+      <label for="radio">Masculin</label></td><br> 
+     </tr>    
+     <tr>
+            <td>Pays:</td>
+            <td><select name="select" id="#">Votre Pays</td></select>
+        </tr>
+    </table>
+    </fieldset> 
+    <fieldset><legend><optgroup label="Vos gouts"></optgroup></legend>
+        <table>
+            <tr>
+       <input type="checkbox" id="Nom" name="nom">Tarte aux fraise a la creme d'amande<br>
+      </tr>
+         <tr>
+       <input type="checkbox" id="Nom" name="nom">Tarte aux prunes<br>
+      </tr>
+         <tr>
+       <input type="checkbox" id="Nom" name="nom">Tarte rustique aux mirabelles Lorraine,noisettes et miel<br>
+      </tr>
+      <tr>
+        <td><textarea>Decrivez vos gouts en detail</textarea></td>
+      </tr>
+        </table>
+    </fieldset>
+    <fieldset><legend><optgroup label="Envoyez nous votre photo"></optgroup></legend>
+     <table>
+     <tr>
+        <td><button type="reset">Choisir un fichier</button>Aucun fichier choisi</td>
+     </tr>
+    <tr>
+    <td><button type="reset">Effacer</button></td> <td> <button type="submit">Envoyer</button></td>
+    </tr>
+     </table>
+     
+    </fieldset>
+</body>
+</html>
