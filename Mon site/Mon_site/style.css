@@ -1,0 +1,38 @@
+/* Style du titre h1 */
+h1 {
+  color: blue;
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Style des titres h2 */
+h2 {
+  color: #c0392b;
+}
+
+/* Style des blocs de contenu */
+.bloc {
+  background-color: yellow;
+  font-family: Verdana, sans-serif;
+  color: gray;
+}
+
+/* Style de la barre de navigation */
+#menu {
+  background-color: rgb(240, 230, 210);
+}
+
+/* Style du paragraphe de la ville */
+p.ville {
+  font-style: italic;
+  text-align: right;
+}
+
+/* Style de l'affichage des prix */
+.prix {
+  font-weight: bold;
+  color: green;
+}
+
+
