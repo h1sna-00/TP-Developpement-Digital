@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demande d'inscription du regime AMO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <h1><b>Demande d'inscription</b></h1>
+    </header>
+    <main>
+    <form action="inscription.php" method="post">
+        <section class="zone-verte">
+            <h2>1- Information sur le demandeur</h2>
+            <p>
+                <label for="identfication">Identifiant Digital Civil et Social :</label>
+                <input type="text" id="identification" name="identification">
+            </p>
+            <p>Date de naissance:</p>
+            <p>
+                <label for="jour">Jour :</label><br>
+                <input type="text" id="jour" name="jour"><br>
+                 <label for="mois">Mois:</label><br>
+                <input type="text" id="mois" name="mois"><br>
+                 <label for="annee">Annee :</label><br>
+                <input type="text" id="annee" name="annee"><br>
+            </p>
+            <p>
+                <label for="password">Mots de passe :</label>
+                    <input type="password" id="motdepase" name="motdepasse"><br>
+                
+            </p>
+            <table border="1">
+                <tr>
+                    <th colspan="23">Liste des enfants pris en charge</th>
+                </tr>
+                <tr>
+                <th>Nom</th>
+                <th>Prenom</th>
+                <th>Date de naissance</th>
+                </tr>
+                 <tr>
+               <td>
+                <label for="nom">Nom de premier enfant</label>
+                <input type="text" id="nom" name="nom">
+               </td>
+               <td> 
+                <label for="prenom">Prenom de premier enfant</label>
+                <input type="text" id="prenom" name="prenom">
+               </td>
+                 <td>
+                    <label for="date">Date de naissance de premier enfant :</label>
+                    <input type="text" id="date" name="date">
+                 </td> 
+                </tr>
+                 <tr>
+               <td>
+                <label for="nom">Nom de deuxieme enfant</label>
+                <input type="text" id="nom" name="nom">
+               </td>
+               <td> 
+                <label for="prenom">Prenom de deuxieme enfant</label>
+                <input type="text" id="prenom" name="prenom">
+               </td>
+                 <td>
+                    <label for="date">Date de naissance de deuxieme enfant :</label>
+                    <input type="text" id="date" name="date">
+                 </td> 
+                </tr>
+            </table>
+        </section>
+    <p> 
+        <label for="code">Saisisser le code :</label>
+        <input type="text" id="code" name="code">
+    </p>
+    <p> 
+        <label for="Observation">Observation :</label><br>
+        <textarea type="text" id="Observation" name="Observation" rows="4"></textarea>
+    </p>
+    <p>
+        <button type="submit">Envoyer</button>
+    </p>
+    </form>
+    </main>
+</body>
+</html>
