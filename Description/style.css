@@ -1,0 +1,160 @@
+
+/* Réinitialisation */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    overflow: hidden;
+    color: #586465;
+}
+
+/* Cercles décoratifs */
+.circle {
+    position: fixed;
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    background: #e8e8e8;
+    z-index: -1;
+}
+
+.circle-left {
+    left: -6px;
+    bottom: 15%;
+}
+
+.circle-right {
+    right: -6px;
+    top: 22%;
+}
+
+/* Carte principale */
+.profile-card {
+    width: 80%;
+    max-width: 1050px;
+    min-height: 600px;
+    display: flex;
+    background: white;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+/* Partie gauche */
+.profile {
+    width: 50%;
+    padding: 125px 7% 80px;
+    border-right: 1px solid #f0f0f0;
+}
+
+.profile-photo {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 22px;
+}
+
+.profile h1 {
+    font-size: clamp(55px, 7vw, 100px);
+    font-weight: 400;
+    letter-spacing: -3px;
+    margin-bottom: 20px;
+}
+
+.profile p {
+    max-width: 380px;
+    color: #999;
+    font-size: 17px;
+    line-height: 1.9;
+    letter-spacing: 0.3px;
+}
+
+/* Partie droite */
+.social-links {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 18px;
+    padding: 60px 7%;
+}
+
+/* Boutons des réseaux */
+.social-button {
+    width: 100%;
+    min-height: 78px;
+    padding: 0 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #e7f5f6;
+    border-radius: 50px;
+    color: #586465;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s ease;
+}
+
+.social-button i {
+    font-size: 27px;
+}
+
+/* Animation au survol */
+.social-button:hover {
+    background: #d2ebed;
+    transform: translateX(5px);
+}
+
+/* Adaptation aux téléphones */
+@media (max-width: 750px) {
+    body {
+        overflow: auto;
+        padding: 25px 0;
+    }
+
+    .profile-card {
+        width: 90%;
+        flex-direction: column;
+        min-height: auto;
+    }
+
+    .profile,
+    .social-links {
+        width: 100%;
+    }
+
+    .profile {
+        padding: 45px 30px;
+        border-right: none;
+        border-bottom: 1px solid #f0f0f0;
+    }
+
+    .profile h1 {
+        font-size: 65px;
+    }
+
+    .profile p {
+        font-size: 15px;
+    }
+
+    .social-links {
+        padding: 35px 25px;
+        gap: 14px;
+    }
+
+    .social-button {
+        min-height: 65px;
+        padding: 0 25px;
+        font-size: 16px;
+    }
+}
+
