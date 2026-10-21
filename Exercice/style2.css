@@ -1,0 +1,46 @@
+h1{
+    text-align: center;
+}
+fieldset{
+    background-color: white;
+    width: 800px;
+    margin: 40px auto;
+  
+}
+h3{
+    color: white;
+    background-color: rgb(12, 137, 12);
+    
+}
+hr{
+    padding: 3px;
+}
+b{
+    color: rgb(13, 125, 13);
+}
+.image{
+border-color: green;
+margin-left: 50px;
+margin-right: 30px;
+background-color: burlywood;
+padding-right: 5px;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+
+.photo1{
+    background-position: center;
+    width: 100px;
+    height: 150px;
+    background-image: url(image1.jpg);
+    background-size: cover;
+    margin-left: 50px;
+}
+.photo2{
+    background-position: center;
+     width: 100px;
+    height: 150px;
+    background-image: url(image2.webp);
+    background-size: cover;
+    margin-left: 60px;
+}

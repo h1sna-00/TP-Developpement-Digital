@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <fieldset >
+         <fieldset >
+        <h1>Remplir le formulaire</h1>
+        <hr>
+  <label for="name">Nom Stagiaire:</label> 
+ <input type="text" id="name" name="name" class="large"><br>
+ <br> <label for="prenom">Prenom Stagiaire:</label>
+  <input type="text" id="prenom" name="prenom" class="large"><br>
+  <br>
+  <span style="display: flex;">
+  <label for="date">Date de naissance:</label>
+  <div class="date">
+    <select><option>jour</option></select>
+     <select><option>mois</option></select>
+      <select><option>anne</option></select>
+      <br><div class="radio">
+  <br>  Homme:<input type="radio" name="sex">
+     Femme:<input type="radio" name="sex">
+   </div>
+  </div>
+  </span>
+ <br> <label for="pseudo">choisir un pseudo*:</label>
+  <input type="text" id="pseudo" name="pseudo" class="large"><br>
+  <br> <label for="email">E-mail*:</label>
+  <input type="email" id="email" name="email" class="large" placeholder="exemple:votre_nom@hotmail.com"><br>
+   <br><label for="password">mot de passe:</label>
+  <input type="password" id="password" name="password" class="large"><br>
+  <br> <label for="password">confirmer mot de passe*:</label>
+  <input type="password" id="password" name="password" class="large"><br>
+  <br> 
+  <span style="display: flex;">
+     <label for="pseudo">Ajouter votre photo*:</label>
+  <div class="pseudo">
+  <input type="file" >
+ <br> <div class="chekbox">
+  <br> <label></label>
+    <input type="checkbox">J'ai fais la verification
+   <br> <div class="button">
+      <br>  <button type="submit">S'inscrire</button>
+        <button type="reset">effacer la saisie</button>
+    </div>
+  </div></div></span>
+ <hr>
+ <h5>Realiser par : votre nom & prenom</h5>
+     </fieldset>
+    </fieldset>
+</body>
+</html>

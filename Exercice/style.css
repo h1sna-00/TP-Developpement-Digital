@@ -1,0 +1,19 @@
+  fieldset{
+            background-color: rgba(215, 207, 207, 0.694);
+            width: 400px;
+          margin: 20px auto;
+             padding: 20px;
+          border: 1px solid #ccc;
+           border-radius: 5px;
+           
+        }
+        h1{
+            color: white;
+            text-align: center;
+        }
+        .large{
+            width: 400px;
+        }
+        h5{
+            color: red;
+        }
