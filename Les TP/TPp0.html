@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .soustitre{
+            color: white;
+
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-style: italic;
+            margin: 0;
+            font-size: 16px;
+
+        }
+        #div{
+            background-color: rgb(4, 134, 22);
+            padding: 10px 20px ;
+            width: 85%;
+        }
+        .image{
+            display: flex;
+            align-items: center;
+            background-color: #f7b49d;
+            border: 1px solid rgb(228, 174, 104);
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            width: 350px;
+            height: 120px;
+            
+        }
+        img{
+            height: 150px;
+            margin: 0 15px ;
+            display: block;
+            filter: grayscale(100%);
+        }
+        .espace{
+            margin-left: 190px;
+            padding-bottom: 10px;
+        }
+        #lien{
+            color: burlywood;
+            text-decoration: underline;
+        }
+        #text{
+            text-decoration: underline;
+
+        }
+        h1{
+            text-align: center;
+        }
+        hr{
+            width: 3px;
+        }
+        b{
+            color: green;
+        }
+       
+        
+    </style>
+</head>
+<body>
+    <fieldset>
+        <h1>MANIPULATION DES BALISES  HTML </h1>
+        <p>Voici le monde d experimenter les usages des differents balises HTML et de composer une page de presentation simple,claire,normaliee et evolutive.</p>
+        <hr>
+        <p>Cette page vise a demontrer la distinction etre </p>
+        <ul type="square" >
+            <li>les elements de <b>bloc</b>(div,h1,ul...)</li>
+            <li>les elements <b>inline</b>(img,a,span...)</li>
+        </ul>
+        <p>Verifier que vous qvez bien l'encodage UTF-8 grace a la balise (meta) (Attention pour que la phrase 
+            precedente s'affiche correctement il est necessaire d'utiliser les entites HTML ..
+        </p>
+    <div id="div">
+    <span class="soustitre">L'auteure de cette page
+    </span>
+    </div>
+    <p>Cette page a été réaliseren tandom par:</p>
+    <ol type="A">
+        <li class="espace">
+            <div class="image">
+                <span>
+                    Marylin
+                </span>
+                <img src="image7.jpg" alt="">
+                <span>Pour L'html</span>
+            </div>
+        </li>
+        <li class="espace">
+            <div class="image">
+                <span>
+                    Tom
+                </span>
+                <img src="image8.jpg" alt="">
+                <span>Pour les feuilles de style</span>
+            </div>
+        </li>
+    </ol>
+    <div id="div">
+        <span class="soustitre">
+            validation
+        </span>
+    </div>
+    <p>
+        Nois avons pu valider cette page en utilisant le validateur mis a notre disposition par le 
+        <span id="text">W3C</span>
+        <span id="lien"><a href="https://www.w3schools.com" target="_blank" > http//validateur.w3.org</a> </span>
+    </p>
+    </fieldset>
+</body>
+</html>
