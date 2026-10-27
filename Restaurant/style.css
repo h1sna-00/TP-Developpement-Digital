@@ -1,0 +1,109 @@
+
+
+h1 {
+    color: blue;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 4px gray;
+}
+
+p.intro {
+    font-style: italic;
+    text-indent: 30px;
+    line-height: 28px;
+    text-align: justify;
+}
+
+#menu {
+    background-color: gray;
+    text-align: center;
+    padding: 15px;
+}
+
+
+
+
+#menu a {
+    text-decoration: none;
+    padding: 10px;
+}
+
+#menu a:hover {
+    color: green;
+    text-decoration: underline;
+}
+
+
+
+
+.card {
+    box-shadow: 3px 3px 8px gray;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 4em;
+    margin: 20px;
+}
+
+
+
+h2 + p {
+    font-weight: bold;
+}
+
+
+nav > a {
+    color: white;
+}
+
+
+footer p {
+    color: gray;
+}
+
+
+a[href$=".ma"] {
+    font-style: italic;
+}
+
+
+
+
+th {
+    background-color: brown;
+    color: white;
+}
+
+td,
+th {
+    padding: 10px;
+}
+
+tr:last-child {
+    font-weight: bold;
+}
+
+
+
+input:focus,
+select:focus,
+textarea:focus {
+    background-color: yellow;
+}
+
+
+input:required {
+    border: 2px solid red;
+}
+
+
+input[type="radio"]:checked + label {
+    font-weight: bold;
+}
+
+
+.hours li:first-child {
+    color: green;
+}
