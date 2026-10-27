@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire d'Inscription</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .form-container{
+            background-color: #b2d8db;
+            border: 2px solid #a68b5d;
+            border-top-right-radius: 90px;
+            padding: 25px 35px;
+            width: 520px;
+           box-shadow: 0 4px 10px rgb(0 , 0, 0, 0.1);
+        }
+        .form-container h2 {
+    color: #00008b; /* Bleu foncé */
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 20px;
+    border-bottom: 2px solid #00008b;
+    display: inline-block;
+    padding-bottom: 3px;
+     }
+     .form-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.form-row label {
+    width: 140px;
+    font-size: 14px;
+    color: #2c3e50;
+    font-weight: 500;
+}
+.form-row input[type="text"],
+.form-row input[type="tel"],
+.form-row input[type="email"],
+.form-row input[type="url"],
+.form-row select,
+.form-row textarea {
+    flex: 1;
+    padding: 6px 8px;
+    border: 1px solid #b0b0b0;
+    border-radius: 3px;
+    background-color: #ffffff;
+    font-size: 13px;
+}
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Inscription</h2>
+        <form>
+            <div class="form-row">
+                <label>Nom</label>
+                <input type="text">
+            </div>
+
+            <div class="form-row">
+                <label>Prénom</label>
+                <input type="text">
+            </div>
+
+            <div class="form-row">
+                <label>Sexe</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="sexe"> Féminin</label>
+                    <label><input type="radio" name="sexe"> Masculin</label>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <label>Date de naissance</label>
+                <input type="text" placeholder="jj/mm/aaaa">
+            </div>
+
+            <div class="form-row">
+                <label>Niveau d'étude</label>
+                <select>
+                    <option>3ème année Collège</option>
+                    <option>Tronc Commun</option>
+                    <option>Baccalauréat</option>
+                </select>
+            </div>
+
+            <div class="form-row">
+                <label>Spécialité</label>
+                <input type="text">
+            </div>
+
+            <div class="form-row">
+                <label>Téléphone</label>
+                <input type="tel">
+            </div>
+
+            <div class="form-row">
+                <label>Email</label>
+                <input type="email">
+            </div>
+
+            <div class="form-row">
+                <label>Site web personnel</label>
+                <input type="url">
+            </div>
+
+            <div class="form-row">
+                <label>Adresse</label>
+                <textarea rows="3"></textarea>
+            </div>
+
+            <div class="form-row">
+                <label>Photo</label>
+                <input type="file">
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
