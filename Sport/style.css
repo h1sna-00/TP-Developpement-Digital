@@ -1,0 +1,125 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+
+
+header {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 span {
+    color: orange;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+}
+
+nav a:hover {
+    color: orange;
+}
+
+
+
+.hero {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h2 {
+    font-size: 35px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: orange;
+    color: black;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+.activities {
+    text-align: center;
+    padding: 40px;
+}
+
+.card {
+    display: inline-block;
+    background-color: white;
+    width: 230px;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+.card:hover {
+    background-color: #ffe2b3;
+}
+
+
+.prices {
+    text-align: center;
+    padding: 40px;
+}
+
+table {
+    margin: auto;
+    border-collapse: collapse;
+    width: 70%;
+}
+
+td, th {
+    padding: 15px;
+}
+
+th {
+    background-color: #222;
+    color: white;
+}
+
+
+
+.contact {
+    text-align: center;
+    padding: 40px;
+}
+
+input, select, textarea {
+    display: block;
+    width: 250px;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+button {
+    background-color: orange;
+    padding: 12px 25px;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
