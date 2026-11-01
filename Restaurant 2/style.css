@@ -1,0 +1,104 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f1e8;
+}
+
+
+
+header {
+    background-color: #244332;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+}
+
+
+.hero {
+    text-align: center;
+    padding: 70px 20px;
+    background-color: #e4d6bd;
+}
+
+.hero h1 {
+    font-size: 35px;
+    color: #244332;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #244332;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+.menu {
+    text-align: center;
+    padding: 40px;
+}
+
+.cards {
+    text-align: center;
+}
+
+.card {
+    display: inline-block;
+    background-color: white;
+    width: 250px;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.card img {
+    width: 100%;
+    height: 160px;
+}
+
+.contact {
+    text-align: center;
+    padding: 40px;
+    background-color: #e4d6bd;
+}
+
+input, textarea {
+    display: block;
+    width: 250px;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+button {
+    background-color: #244332;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+footer {
+    background-color: #244332;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}

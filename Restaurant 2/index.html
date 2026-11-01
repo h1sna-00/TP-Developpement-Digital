@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bella Italia - Restaurant</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Bella Italia</h1>
+        <p>La cuisine italienne, un plaisir à partager.</p>
+
+        <nav>
+            <a href="#accueil">Accueil</a> |
+            <a href="#menu">Notre menu</a> |
+            <a href="#horaires">Horaires</a> |
+            <a href="#reservation">Réservation</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+
+        <section id="accueil">
+            <h2>Bienvenue chez Bella Italia</h2>
+
+            <p>
+                Découvrez les saveurs authentiques de l'Italie
+                dans une ambiance chaleureuse et conviviale.
+            </p>
+
+            <img src="img1.jpg"
+                 alt="Intérieur du restaurant"
+                 width="400">
+
+            <h3>Pourquoi nous choisir ?</h3>
+
+            <ul>
+                <li>Produits frais</li>
+                <li>Recettes traditionnelles</li>
+                <li>Service de qualité</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section id="menu">
+            <h2>Notre menu</h2>
+
+            <h3>Nos entrées</h3>
+
+            <ul>
+                <li>Salade italienne - 35 DH</li>
+                <li>Bruschetta - 25 DH</li>
+                <li>Soupe du jour - 30 DH</li>
+            </ul>
+
+            <h3>Nos plats principaux</h3>
+
+            <table border="1">
+                <tr>
+                    <th>Plat</th>
+                    <th>Description</th>
+                    <th>Prix</th>
+                </tr>
+
+                <tr>
+                    <td>Pizza Margherita</td>
+                    <td>Tomate, mozzarella et basilic</td>
+                    <td>60 DH</td>
+                </tr>
+
+                <tr>
+                    <td>Pasta Carbonara</td>
+                    <td>Pâtes à la sauce crémeuse</td>
+                    <td>70 DH</td>
+                </tr>
+
+                <tr>
+                    <td>Lasagnes</td>
+                    <td>Viande hachée et fromage</td>
+                    <td>75 DH</td>
+                </tr>
+            </table>
+
+            <h3>Nos desserts</h3>
+
+            <ol>
+                <li>Tiramisu</li>
+                <li>Panna Cotta</li>
+                <li>Glace italienne</li>
+            </ol>
+        </section>
+
+        <hr>
+
+        <section id="horaires">
+            <h2>Nos horaires</h2>
+
+            <table border="1">
+                <tr>
+                    <th>Jour</th>
+                    <th>Ouverture</th>
+                    <th>Fermeture</th>
+                </tr>
+
+                <tr>
+                    <td>Lundi - Vendredi</td>
+                    <td>12h00</td>
+                    <td>22h00</td>
+                </tr>
+
+                <tr>
+                    <td>Samedi - Dimanche</td>
+                    <td>13h00</td>
+                    <td>23h00</td>
+                </tr>
+            </table>
+        </section>
+
+        <hr>
+
+        <section id="reservation">
+            <h2>Réservez votre table</h2>
+
+            <form>
+                <label for="nom">Nom complet :</label>
+                <input type="text" id="nom" name="nom"
+                       placeholder="Votre nom" required>
+
+                <br><br>
+
+                <label for="email">Adresse email :</label>
+                <input type="email" id="email" name="email"
+                       placeholder="Votre email" required>
+
+                <br><br>
+
+                <label for="date">Date :</label>
+                <input type="date" id="date" name="date">
+
+                <br><br>
+
+                <label for="personnes">Nombre de personnes :</label>
+                <select id="personnes" name="personnes">
+                    <option>1 personne</option>
+                    <option>2 personnes</option>
+                    <option>3 personnes</option>
+                    <option>4 personnes</option>
+                    <option>5 personnes ou plus</option>
+                </select>
+
+                <br><br>
+
+                <label for="message">Message :</label>
+                <textarea id="message" name="message"
+                          rows="4" cols="30"
+                          placeholder="Votre demande..."></textarea>
+
+                <br><br>
+
+                <button type="submit">Envoyer la réservation</button>
+            </form>
+        </section>
+
+    </main>
+
+    <hr>
+
+    <footer>
+        <h3>Contact</h3>
+        <p>Email : contact@bella-italia.com</p>
+        <p>Téléphone : 0600000000</p>
+        <p>&copy; 2026 Bella Italia - Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
