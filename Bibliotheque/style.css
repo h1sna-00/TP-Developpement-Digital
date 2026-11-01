@@ -1,0 +1,154 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f5ef;
+    color: #382d25;
+}
+
+
+
+header {
+    background-color: #382d25;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 span {
+    color: #d6a96c;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+}
+
+nav a:hover {
+    color: #d6a96c;
+}
+
+
+.hero {
+    background-color: #e9ddcc;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h2 {
+    font-size: 35px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: #382d25;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+
+.books {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.cards {
+    text-align: center;
+}
+
+.card {
+    display: inline-block;
+    background-color: white;
+    width: 230px;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h3 {
+    color: #382d25;
+}
+
+.card strong {
+    color: #b47b39;
+}
+
+.card button {
+    background-color: #382d25;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background-color: #b47b39;
+}
+
+
+
+.about {
+    background-color: #e9ddcc;
+    text-align: center;
+    padding: 50px;
+}
+
+.about p {
+    max-width: 600px;
+    margin: auto;
+    line-height: 1.7;
+}
+
+
+
+.contact {
+    text-align: center;
+    padding: 40px;
+}
+
+input, select, textarea {
+    display: block;
+    width: 280px;
+    padding: 12px;
+    margin: 12px auto;
+}
+
+textarea {
+    height: 100px;
+}
+
+.contact button {
+    background-color: #382d25;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+footer {
+    background-color: #382d25;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
