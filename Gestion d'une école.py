@@ -1,44 +1,57 @@
-class Personne : 
-      def __init__(self,nom,age):
-            self.nom=nom
-            self.age=age
-      def se_presenter(self):
-            print(f"je m'appelle {nom},j'ai {age}ans.")
-nom=input("Entrer votre nom:")
-age=input("entrer votre age:")
-hasna=Personne(nom,age)
-Personne.se_presenter(hasna)
-class  Etudiant: 
-      def __init__(self,nom,age, niveau, matieres  ):
-            self.nom=nom
-            self.age=age
-            self.niveau=niveau
-            self.matieres=matieres
-      def se_presenter(self):
-          print(f"Je m'appelle {nom}, j'ai {age} ans, je suis en {niveau}. Je suis inscrit dans les matières {matieres}.")
+class Personne:
+    def __init__(self, nom, age):
+        self.nom = nom
+        self.age = age
+
+    def se_presenter(self):
+        return f"Je m'appelle {self.nom}, j'ai {self.age} ans."
 
 
-nom=input("Entrer votre nom:")
-age=input("entrer votre age:")
-niveau=input("Entrer votre niveau:")
-matieres=input("Entrer vos matieres:")
 
-hasna=Etudiant(nom,age,niveau,matieres)
-Etudiant.se_presenter(hasna)
+class Etudiant(Personne):
+    def __init__(self, nom, age, niveau, matieres):
+        super().__init__(nom, age)  
+        self.niveau = niveau
+        self.matieres = matieres
 
-class Professeur:
-      def __init__(self,nom,age,  specialite , salaire):
-             self.nom=nom
-             self.age=age
-             self.specialite=specialite
-             self.salaire=salaire
-      def se_presenter(self):
-                  print(f"Je m'appelle {nom}, j'ai {age} ans,  Je suis professeur en {specialite} avec un salaire de {salaire} DH.")     
+    def se_presenter(self):
+        return f"Je m'appelle {self.nom}, j'ai {self.age} ans, je suis en {self.niveau}. Je suis inscrit dans les matières : {self.matieres}."
 
-nom=input("Entrer votre nom:")
-age=input("entrer votre age:")
-specialite=input("Entrer votre specialite:")
-salaire=input("Entrer votre salaire:")
-hasna=Professeur(nom,age,specialite,salaire)
-Professeur.se_presenter(hasna)
+
+
+class Professeur(Personne):
+    def __init__(self, nom, age, specialite, salaire):
+        super().__init__(nom, age)  
+        self.specialite = specialite
+        self.salaire = salaire
+
+    def se_presenter(self):
+        return f"Je m'appelle {self.nom}, j'ai {self.age} ans. Je suis professeur en {self.specialite} avec un salaire de {self.salaire} DH."
+
+
+
+
+
+nom = input("Entrer votre nom : ")
+age = input("Entrer votre age : ")
+p = Personne(nom, age)
+print(p.se_presenter())
+
+
+nom = input("Entrer votre nom : ")
+age = input("Entrer votre age : ")
+niveau = input("Entrer votre niveau : ")
+matieres = input("Entrer vos matieres : ")
+e = Etudiant(nom, age, niveau, matieres)
+print(e.se_presenter())
+
+
+nom = input("Entrer votre nom : ")
+age = input("Entrer votre age : ")
+specialite = input("Entrer votre specialite : ")
+salaire = input("Entrer votre salaire : ")
+prof = Professeur(nom, age, specialite, salaire)
+print(prof.se_presenter())
+           
+
            
