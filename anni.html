@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .anim-box{
+            width: 150px;
+            height: 60px;
+            margin: 20px;
+            background-color: cyan;
+            border: 1px solid black;
+        }
+        .translate:hover {
+           transform: translateY(-20px);
+        }
+        .translate{
+            transition: transform 1s;
+        }
+        .rotate:hover{
+            transform: rotate(45deg);
+        }
+        .scale:hover{
+            transform: scale(0.9);
+        }
+        .skew:hover{
+            transform: skew(20deg, 10deg);
+        }   
+         .transition-box{
+    
+            width: 100px;
+            height: 100px;
+            background: red;
+            transition:widht 2s,height 4s ;
+        }
+        .transition-box:hover{
+            width: 300px;
+            height: 200px;
+        }
+        #menu a{
+            margin-right: 15px;
+            color: black;
+            transition: color 0.5s;
+            text-decoration: none;
+        }
+        #menu a:hover{
+            color: green;
+            text-decoration: underline;
+        }
+        .software-list{
+            display: flex;
+            background-color: red;
+        }
+        .software{
+            flex-grow: 1;
+            background-color: white;
+          box-shadow: 2px 2px 5px gray;
+          border: 1px solid black;
+          padding: 4em;
+        margin: 10px;
+         transition: transform 0.3s;
+        }
+        .software:hover{
+            transform: scale(1.1);
+        }
+        @keyframes move-colors {
+    0% { background-color: red; left:0px; top:0px;}
+
+    25% { background-color: yellow; left:200px; top:0px;}
+
+    50% { background-color: blue; left:200px; top:200px;}
+
+    75% { background-color: green; left:0px; top:200px;}
+
+    100% { background-color: red; left:0px; top:0px;}
+}
+
+.keyframe-box {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: red;
+    animation-name: move-colors; /* required */
+    animation-duration: 4s; /* required */
+    animation-iteration-count: infinite; /* repeat forever */
+    animation-direction: alternate; /* normal| reverse | alternate | alternate-reverse */
+    animation-delay: 3s;
+}
+
+/* time = duration * percentage */
+
+@keyframes change-color {
+    from { background-color: red; }
+    to { background-color: yellow; }
+}
+
+.buttons {
+    display: flex;
+    margin-top: 220px;
+}
+
+.see-all {
+    flex-grow: 2;
+    animation-name: change-color;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.vote {
+    flex-grow: 1;
+    text-align: center;
+}
+.keyframes-box {
+    animation-timing-function: ease-in;
+}
+
+
+    </style>
+</head>
+<body>
+    <h1>Best  Tools & utilities software</h1>
+    <nav id="menu">
+        <a href="#">window</a>
+        <a href="###">mac</a>
+        <a href="#">androide</a>
+        <a href="#">ios</a>
+    </nav>
+    <h2>1. transfomation (hover each box)</h2>
+    <div class="anim-box translate">translate</div>
+    <div class="anim-box rotate">Rotate</div>
+    <div class="anim-box scale">scale</div>
+    <div class="anim-box skew">skew</div>
+    <h2>2. transition (hover the box)</h2>
+    <div class="transition-box"></div>
+    <h2>3. Software</h2>
+    <div class="software-list">
+        <div class="software">VPN GATE CLIENT</div>
+        <div class="software">SuperAntispyware</div>
+       <div class="software">Malwarebytes</div>
+    </div>
+   <h2>4. keyframe (plays by itself)</h2>
+    <div class="keyframe-box"></div>
+    
+    <div class="buttons">
+      <button class="see-all">SEE ALL</button>
+      <a class="vote" href="#">VOTE</a>
+    </div>
+
+</html>
