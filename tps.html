@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .text{
+            font-size: 16px;
+        }
+         @media (min-width : 768px) and (max-widht: 1023px)
+    {
+    .text 
+    {
+        font-size: 18px;
+         
+    }
+    }
+     @media (min-width : 1024px) 
+    {
+    .text 
+    {
+        font-size: 20px;
+         
+    }
+    }
+    .container{
+        display:grid;
+       grid-template-columns: repeat(3,1fr);
+        gap: 10px;
+    }
+    .col{
+        background-color: rgb(96, 143, 210);
+        padding: 20px;
+        text-align: center;
+    }
+  
+    @media screen and (max-width: 900px) {
+        .col{
+            grid-template-columns: repeat(2,1fr);
+        }
+    }
+    @media screen and (max-widht: 600px) {
+        .col{
+            grid-template-columns: 1fr;
+        }
+    }
+   .b{
+    font-size: medium;
+   }
+   img{
+      max-width: 100%;
+      height: auto;
+      display: block;
+   }
+  ul{
+    background-color: #e99b91;
+    list-style: none;
+    padding: 0;
+    margin: 1;
+    display: flex;
+  }
+  li{
+    flex: 1;
+  }
+  li a{
+    display: block;
+    padding: 15px;
+   border: 1px solid white;
+  }
+  @media screen and (max-width :600px){
+    ul{
+        flex-direction: column;
+    }
+  }
+ 
+    </style>
+</head>
+<body>
+   <div>
+        <p class="text">Le texte change de taille selon la largeure de l'ecran </p>
+    </div>
+    <div class="container">
+        <div class="col">Colonne 1</div>
+        <div class="col">Colonne 2</div>
+        <div class="col">Colonne 3</div>
+    </div>
+    <h2 class="b">Image Responsive</h2>
+    <img src="img3.jpg">
+    <ul >
+        <li ><a href="#">Accueil</a></li>
+        <li ><a href="#">Services</a></li>
+        <li ><a href="#">Portfolio</a></li>
+        <li ><a href="#">Contact</a></li>
+    </ul>
+</body>
+</html>
