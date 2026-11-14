@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exemple Bootstrap</title>
+    <link rel="stylesheet" href="style.css">
+<style>    
+.container {
+    width: 85%;
+    height: 220px;
+    margin: auto;
+    background-color: #198754;
+    padding: 0px;
+}
+
+.ligne1 {
+    display: flex;
+    gap: 5px;
+}
+
+.ligne1 div {
+    width: 33.33%;
+    height: 35px;
+    background-color: #10bfdc;
+    border: 1px solid black;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.ligne2 {
+    margin-top: 10px;
+}
+
+.ligne2 div {
+    height: 35px;
+    background-color: #10bfdc;
+    border: 1px solid black;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.ligne3 {
+    display: flex;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.ligne3 div {
+    width: 20%;
+    height: 35px;
+    background-color: #10bfdc;
+    border: 1px solid black;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.ligne4 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 36px 36px;
+    margin-top: 10px;
+}
+
+.ligne4 div {
+    width: 50%;
+    height: 25px;
+    background-color: #10bfdc;
+    border: 1px solid black;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.gauche {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.droite {
+    grid-column: 3;
+    grid-row: 1;
+    justify-self: end;
+}
+
+.centre {
+    grid-column: 2;
+    grid-row: 2;
+    justify-self: center;
+}
+</style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="ligne1">
+            <div>A</div>
+            <div>B</div>
+            <div>C</div>
+        </div>
+
+        <div class="ligne2">
+            <div>A</div>
+        </div>
+
+        <div class="ligne3">
+            <div>A</div>
+            <div>B</div>
+            <div>C</div>
+            <div>D</div>
+            <div>E</div>
+        </div>
+
+        <div class="ligne4">
+            <div class="gauche">A</div>
+            <div class="droite">B</div>
+            <div class="centre">A</div>
+        </div>
+
+    </div>
+
+</body>
+</html>
