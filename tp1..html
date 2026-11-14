@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         div {
+            width: 300px;
+            height: 100px;
+            background-color: red;
+          transition: width 2s,height 4s;
+        }
+        .div1:hover{
+           width: 300px;
+        }
+      @keyframes exemple{
+               form{background-color: red;}
+               to{background-color: yellow;}
+      }
+      .div2:hover{
+         width: 100px;
+            height: 100px;
+            background-color: red;
+            animation-name: exemple;
+            animation-duration: 10s;
+      }
+       @keyframes exemple1{
+               0%{background-color: red;}
+               25%{background-color: yellow;}
+                50%{background-color: blue;}
+                 100%{background-color: green;}
+      }
+.div3:hover{
+         width: 100px;
+            height: 100px;
+            background-color: red;
+            animation-name: exemple1;
+            animation-duration: 10s;
+      }
+       @keyframes exemple2{
+               0% {background-color: red;left: 0px;top: 0px;}
+               25%  {background-color: yellow;left: 200px;top: 0px;}
+                50%  {background-color: blue;left: 200px;top: 200px;}
+                 75% {background-color: green;left: 0px;top: 200px;}
+                 100% {background-color: red;left: 0px;top: 0px;}
+      }
+      .div4:hover{
+         width: 100px;
+            height: 100px;
+            position: relative;
+            background-color: red;
+            animation-name: exemple2;
+            animation-duration: 4s;
+      }
+    </style>
+</head>
+<body>
+   <div class="div1"></div>
+   <br>
+   <div class="div2"></div>
+   <br>
+   <div class="div3"></div>
+   <br>
+   <div class="div4"></div>
+</body>
+</html>
