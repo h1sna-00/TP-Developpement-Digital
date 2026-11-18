@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+   body{
+    background-color: rgb(188, 196, 230);
+    background-position: center;
+      display: flex;
+             justify-content: center;
+             align-items: center;
+            padding: 30px;  
+   }
+   img{
+       width: 70px;
+       height: 70px;
+       display: block;
+     margin-left: auto;
+     margin-right: auto;
+    margin: 40px auto;
+    border-radius: 30px 30px 30px 30px ;
+    border: 1px solid rgb(196, 196, 125);
+   }
+   fieldset{
+      border-radius: 30px;
+      box-shadow: 2px;
+      background-color: rgb(255, 255, 255);
+      width: 450px;
+      height: 640px;
+    
+   }
+   .input{
+    width: 400px;
+    height:30px ;
+    border-radius: 10px 10px 10px 10px;
+    border: 1px solid;
+   }
+   .inpu{
+    background-color: rgb(81, 81, 212);
+     width: 400px;
+    height:30px ;
+    border-radius: 10px 10px 10px 10px;
+    border: 1px solid;
+    color: white;
+     cursor: pointer;
+   }
+  .social-signup {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-signup p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px; 
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #3b82f6; 
+    border-radius: 50%;      
+    color: #3b82f6;             
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+
+.social-btn:hover {
+    background-color: #3b82f6;
+    color: #fff;
+}
+.soc{
+width: 40px;
+height: 40px;
+
+}
+    </style>
+</head>
+<body>
+    <fieldset>
+        <img src="img5.jpeg"><br><br>
+        <input class="input" type="text" placeholder="Username"><br><br>
+        <input  class="input" type="password" placeholder="Password"><br><br>
+        <input class="input" type="email" placeholder="Email"><br><br>
+        <input class="input" type="number" placeholder="Phone Number"><br><br>
+        <input class="input" type="date" placeholder="Birth Date"><br><br>
+        <button class="inpu" >Create Account</button><br><br><br>
+        <hr>
+      <div class="social-signup">
+    <p>Sign up with social media</p>
+    <div class="social-icons">
+        <a href="https://www.facebook.com/?locale=fr_FR" class="social-btn"><img src="face.webp" class="soc"></a>
+        <a href="https://www.google.com/?hl=fr" class="social-btn"><img src="google.jpeg" class="soc"></a>
+        <a href="https://x.com/?lang=fr" class="social-btn"><img src="twitter.jpeg" class="soc"></a>
+    </div>
+</div>
+       
+    </fieldset>
+</body>
+</html>
