@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+   body{
+             background-color: rgb(38, 59, 58);
+             background-position: center;
+             background-repeat: no-repeat;
+             background-size: cover;
+             font-family: Arial, Helvetica, sans-serif;
+             margin: 0;
+             min-height: 100vh;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+            padding: 30px;
+   }
+   fieldset{
+          color: rgb(255, 252, 248);
+          background-color: rgb(38, 59, 58);
+         width: 500px;
+         padding: 50px;
+         border-radius: 5px;
+         border: 2px solid ;
+        }
+        input{
+            width: 400px;
+            border-radius: 2px;
+            height: 30px;
+           
+        }
+         select{
+              width: 400px;
+            border-radius: 2px;
+            height: 30px;
+         }
+         .Gender{
+            background-color: rgb(38, 59, 58);
+            color: aliceblue;
+         }
+    </style>
+</head>
+<body>
+    <fieldset>
+<h2>Register Today</h2>
+<h6>Fill in the data below</h6>
+ <input type="text" id="name" placeholder="Full Name"><br><br>
+  <input type="email" id="email" placeholder="E-maIL Address"><br><br>
+   <select id="position">
+    <option value="">Position</option>
+    <option>Maison</option>
+    <option>Hotel</option>
+    <option>Caffe</option>
+   </select><br><br>
+    <input type="password" id="name" placeholder="Password"><br><br>
+    <label>Gender:</label>
+    <button type="button" class="Gender">Male</button>
+    <button type="button" class="Gender">Female</button>
+    <button type="button" class="Gender">Secret</button><br><br>
+    I confirm that all data are correct<br><br></ul>
+    <button type="button">Register</button><br>
+    </fieldset>
+</body>
+</html>
