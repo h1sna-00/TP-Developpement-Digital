@@ -5,63 +5,116 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-         div {
-            width: 300px;
-            height: 100px;
-            background-color: red;
-          transition: width 2s,height 4s;
+        body{
+            background-image: url(img4.jpeg);
+             background-position: center;
+             background-repeat: no-repeat;
+             background-size: cover;
+             font-family: Arial, Helvetica, sans-serif;
+             margin: 0;
+             min-height: 100vh;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+            padding: 30px;       
+ }
+        fieldset{
+          color: rgb(30, 29, 28);
+          background-color: white;
+         width: 800px;
+         padding: 60px;
+         border-radius: 5px;
+        
         }
-        .div1:hover{
-           width: 300px;
+       
+        h2{
+            text-align: center;
+            margin-bottom: 35px;
+             color: #333;
         }
-      @keyframes exemple{
-               form{background-color: red;}
-               to{background-color: yellow;}
-      }
-      .div2:hover{
-         width: 100px;
-            height: 100px;
-            background-color: red;
-            animation-name: exemple;
-            animation-duration: 10s;
-      }
-       @keyframes exemple1{
-               0%{background-color: red;}
-               25%{background-color: yellow;}
-                50%{background-color: blue;}
-                 100%{background-color: green;}
-      }
-.div3:hover{
-         width: 100px;
-            height: 100px;
-            background-color: red;
-            animation-name: exemple1;
-            animation-duration: 10s;
-      }
-       @keyframes exemple2{
-               0% {background-color: red;left: 0px;top: 0px;}
-               25%  {background-color: yellow;left: 200px;top: 0px;}
-                50%  {background-color: blue;left: 200px;top: 200px;}
-                 75% {background-color: green;left: 0px;top: 200px;}
-                 100% {background-color: red;left: 0px;top: 0px;}
-      }
-      .div4:hover{
-         width: 100px;
-            height: 100px;
-            position: relative;
-            background-color: red;
-            animation-name: exemple2;
-            animation-duration: 4s;
-      }
+        .a{
+            display: flex;
+             grid-template-columns: 1fr 1fr;
+            gap: 25px;
+        }
+         
+       textarea {
+            height: 40px;
+           width: 600px;
+        }
+      
+
+        .full {
+            grid-column: span 2;
+           
+        }
+         button {
+            background-color: #3478db;
+            color: white;
+            border: none;
+            padding: 17px;
+            width: 180px;
+            font-size: 14px;
+            cursor: pointer;
+            border-radius: 4px;
+            margin: 20px auto 0;
+           
+        }
+         label {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #555;
+        }
+          @media screen and (max-width: 600px) {
+            .container {
+                width: 100%;
+                padding: 25px;
+            }
+
+            .form {
+                grid-template-columns: 1fr;
+            }
+
+            .full {
+                grid-column: span 1;
+            }
+        }
+        .input{
+            width: 200px;
+            height: 20px;
+            border-radius: 5px;
+            border: 1px solid black;
+        }
     </style>
 </head>
 <body>
-   <div class="div1"></div>
+
+    <fieldset>
+        <h2>Powering world-class companies</h2>
+        <div class="a">
+        <div class="contenaire">
+        <label for="name">First name *</label><br>
+        <input  class="input"  type="text" id="name" placeholder="Enter your first name"><br><br>
+        <label for="email">Business email *</label><br>
+        <input  class="input" type="email" id="email" ><br><br>
+        <label for="job">Job title *</label><br>
+        <input class="input"  type="text" id="job" ><br><br>
+        <label>What would you be using Flinks for? *</label><br>
+            <textarea required></textarea><br><br>
+     </div>
+    <div class="contenair">
+        <label for="lname">Laste name *</label><br>
+        <input class="input"  type="text" id="lname" placeholder="Enter your last name"><br><br>
+        <label for="number">Phone number *</label><br>
+        <input  class="input" type="text" id="number" ><br><br>
+    </div>
+   </div>
    <br>
-   <div class="div2"></div>
-   <br>
-   <div class="div3"></div>
-   <br>
-   <div class="div4"></div>
+   
+   <button type="submit" class="full">
+                REQUEST A DEMO
+            </button>
+   
+    </fieldset>
 </body>
 </html>
