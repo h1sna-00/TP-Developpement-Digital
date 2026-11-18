@@ -1,119 +1,151 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Exemple Bootstrap</title>
-    <link rel="stylesheet" href="style.css">
-<style>    
-.container {
-    width: 85%;
-    height: 220px;
-    margin: auto;
-    background-color: #198754;
-    padding: 0px;
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request a Demo</title>
 
-.ligne1 {
-    display: flex;
-    gap: 5px;
-}
+    <style>
+        * {
+            box-sizing: border-box;
+        }
 
-.ligne1 div {
-    width: 33.33%;
-    height: 35px;
-    background-color: #10bfdc;
-    border: 1px solid black;
-    text-align: center;
-    padding-top: 10px;
-}
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url("https://images.unsplash.com/photo-1441974231531-c6227db76b6e");
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+        }
 
-.ligne2 {
-    margin-top: 10px;
-}
+        .container {
+            background-color: white;
+            width: 800px;
+            padding: 60px;
+            border-radius: 5px;
+        }
 
-.ligne2 div {
-    height: 35px;
-    background-color: #10bfdc;
-    border: 1px solid black;
-    text-align: center;
-    padding-top: 10px;
-}
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 35px;
+        }
 
-.ligne3 {
-    display: flex;
-    gap: 5px;
-    margin-top: 10px;
-}
+        .form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+        }
 
-.ligne3 div {
-    width: 20%;
-    height: 35px;
-    background-color: #10bfdc;
-    border: 1px solid black;
-    text-align: center;
-    padding-top: 10px;
-}
+        .field {
+            display: flex;
+            flex-direction: column;
+        }
 
-.ligne4 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 36px 36px;
-    margin-top: 10px;
-}
+        label {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #555;
+        }
 
-.ligne4 div {
-    width: 50%;
-    height: 25px;
-    background-color: #10bfdc;
-    border: 1px solid black;
-    text-align: center;
-    padding-top: 10px;
-}
+        input, textarea {
+            padding: 14px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            font-size: 14px;
+            width: 100%;
+        }
 
-.gauche {
-    grid-column: 1;
-    grid-row: 1;
-}
+        textarea {
+            height: 150px;
+            resize: vertical;
+        }
 
-.droite {
-    grid-column: 3;
-    grid-row: 1;
-    justify-self: end;
-}
+        .full {
+            grid-column: span 2;
+        }
 
-.centre {
-    grid-column: 2;
-    grid-row: 2;
-    justify-self: center;
-}
-</style>
+        button {
+            background-color: #3478db;
+            color: white;
+            border: none;
+            padding: 17px;
+            width: 180px;
+            font-size: 14px;
+            cursor: pointer;
+            border-radius: 4px;
+            margin: 20px auto 0;
+        }
+
+        button:hover {
+            background-color: #245bb0;
+        }
+
+        @media screen and (max-width: 600px) {
+            .container {
+                width: 100%;
+                padding: 25px;
+            }
+
+            .form {
+                grid-template-columns: 1fr;
+            }
+
+            .full {
+                grid-column: span 1;
+            }
+        }
+    </style>
 </head>
+
 <body>
 
     <div class="container">
 
-        <div class="ligne1">
-            <div>A</div>
-            <div>B</div>
-            <div>C</div>
-        </div>
+        <h2>Powering world-class companies</h2>
 
-        <div class="ligne2">
-            <div>A</div>
-        </div>
+        <form class="form">
 
-        <div class="ligne3">
-            <div>A</div>
-            <div>B</div>
-            <div>C</div>
-            <div>D</div>
-            <div>E</div>
-        </div>
+            <div class="field">
+                <label>First name *</label>
+                <input type="text" placeholder="Enter your first name" required>
+            </div>
 
-        <div class="ligne4">
-            <div class="gauche">A</div>
-            <div class="droite">B</div>
-            <div class="centre">A</div>
-        </div>
+            <div class="field">
+                <label>Last name *</label>
+                <input type="text" placeholder="Enter your last name" required>
+            </div>
+
+            <div class="field">
+                <label>Business email *</label>
+                <input type="email" required>
+            </div>
+
+            <div class="field">
+                <label>Phone number *</label>
+                <input type="tel" required>
+            </div>
+
+            <div class="field">
+                <label>Job title *</label>
+                <input type="text" required>
+            </div>
+
+            <div class="field full">
+                <label>What would you be using Flinks for? *</label>
+                <textarea required></textarea>
+            </div>
+
+            <button type="submit" class="full">
+                REQUEST A DEMO
+            </button>
+
+        </form>
 
     </div>
 
